@@ -1,14 +1,14 @@
 # SUT23-Labb3-API
 
-GetAll funktionen ----> https://localhost:7287/api/Person
+GET/api/Person = Hämtar alla Personer i api:t
 
-Get PersonInterest ----> https://localhost:7287/api/Person/Interest/1   Person med Id= 1 vald här
+GET/api/Person/Interest/{id} = Hämtar information om intressen en person har. Du söker efter personen via Person ID.
 
-GetPersonLinks ----> https://localhost:7287/api/Person/Links/1     Person med Id= 1 vald här
+GET/api/Person/Links/{id} = Hämtar information om vilka länkar som är kopplade till en vis person. Även här söker du med hjälp av Person ID.
 
-AddInterest ---->   https://localhost:7287/api/Person/AddInterest?personId=4&interest=101    Person med Id =4 vald och får tillagd Interest med Id = 101
+POST/api/Person/AddInterest = Här lägger du till ett nytt intresse för en person. För att göra det använder du Person Id, samt ID:t för intresset. 
 
-Add Link  ----> https://localhost:7287/api/Person/AddLink?personId=2&interestId=102&url=www.github.com   Person med Id = 2, och Interest Id = 102, har lagt till url www.github.com
+POST/api/Person/AddLink = Här lägger du till en länk som är kopplad till både en person och ett intresse, du använder dig av deras Id, sen uppger du en Url länk. 
 
 
 
