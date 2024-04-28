@@ -70,7 +70,7 @@ namespace SUT23_Labb3_API.Controllers
         }
 
             [HttpPost("AddInterest")]
-            public async Task<IActionResult> AddInterest(int personId, int interest)
+            public async Task<IActionResult> AddInterest(int personId, int interestId)
         {
             try
             {
@@ -78,7 +78,7 @@ namespace SUT23_Labb3_API.Controllers
                 {
                     return BadRequest();
                 }
-                await _labb.AddPersonInterest(personId, interest);
+                await _labb.AddPersonInterest(personId, interestId);
                 return Ok();
             }
             catch (Exception)
